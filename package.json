@@ -4,6 +4,11 @@
   "version": "0.6.0",
   "description": "Refactoring support",
   "repository": "https://github.com/hax/refactor",
+  "activationCommands": {
+    "atom-text-editor": [
+      "refactor:rename"
+    ]
+  },
   "license": "MIT",
   "auther": {
     "name": "Daisuke Mino",
