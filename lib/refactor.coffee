@@ -33,7 +33,7 @@ new class Main
       watcher = new Watcher @moduleManager, editor
       @watchers.add watcher
       editor.onDidDestroy =>
-        @watchers.delete watcher
+        @watchers?.delete watcher
         watcher.dispose()
     @disposables.add atom.commands.add 'atom-text-editor', 'refactor:rename', @onRename
     @disposables.add atom.commands.add 'atom-text-editor', 'refactor:done', @onDone
